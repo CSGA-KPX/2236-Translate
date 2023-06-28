@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>_2236Utils</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Model\GalTrans.fs" />
+    <Compile Include="Model\UABEA.fs" />
+    <Compile Include="Model\ExportItem.fs" />
+    <Compile Include="Commands\Dump.fs" />
+    <Compile Include="Commands\Merge.fs" />
+    <Compile Include="Commands\Validate.fs" />
+    <Compile Include="Commands\GoogleTrans.fs" />
+    <None Include="Commands\deep-translator-api.json" />
+    <Compile Include="Commands\GalTransDump.fs" />
+    <Compile Include="Commands\GalTransMerge.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup />
+
+  <ItemGroup>
+    <PackageReference Include="Argu" Version="6.1.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="SwaggerProvider" Version="2.0.0-theta-001" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="7.0.300" />
+  </ItemGroup>
+
+</Project>
