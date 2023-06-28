@@ -17,6 +17,7 @@
     <None Include="Commands\deep-translator-api.json" />
     <Compile Include="Commands\GalTransDump.fs" />
     <Compile Include="Commands\GalTransMerge.fs" />
+    <Compile Include="Commands\Purge.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 

@@ -11,6 +11,8 @@
 - [ ] 公开翻译文本供测试
 - [ ] 项目结束归档
 
+- [ ] 测试UABEA自动化导入？
+
 # 大致流程
 1. 下载安装UABEA( https://github.com/nesrak1/UABEA ) 。只能使用UABEA，UABE导出的格式非常难解析，而AssetStudio无法编辑资源。
 2. 以JSON格式从下列文件中导出脚本到 `uabea-dump/` ，分别在一下目录中。但实际测试中游戏使用的貌似是后者的文本。
