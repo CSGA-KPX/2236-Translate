@@ -61,6 +61,7 @@ let main args =
                 ensureFileExists transFile
                 ensureFileExists projFile
                 GalTransMerge.merge transFile projFile
+            | [| "purge" |] -> Purge.purge ()
             | _ -> printfn $"未知指令:%A{args}"
         with e ->
             printfn $"{e.ToString()}"
