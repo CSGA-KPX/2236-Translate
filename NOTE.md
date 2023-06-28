@@ -7,12 +7,15 @@
 片假名角色在确定翻译前保留原文
 
 ヨツバ POV
+
 マスコ 女，ヨツバ的AI秘书 ，AI助理
 
 ヒメ・シオン 前辈
+
 ヨシナガ 女，ヨシナガ的AI秘书 ，AI助理
 
 ハル 洋房里面的
+
 シオン 学校里面的
 
 シリ・シオン 还没出现
@@ -22,20 +25,30 @@
 太郎和茜因为只出现在故事里就不预留了
 
 # 特殊词
+
 GATE 门 作为心灵感应的通道，是否特殊翻译？
+
 Akashic Phone  アカシック・フォーン
+
 Paradigm Lost 
+
 アーカイヴ  The Archive  档案馆
+
 formatted information
+
 Monolith  モノリス
+
 メッセ
 
 # 不确定的部分
 
 ## ネクラ
 所有出现了这个词的地方需要重新校正：
+
 https://ja.wikipedia.org/wiki/%E3%83%8D%E3%82%AF%E3%83%A9
+
 ネクラ=根暗=根が暗い
+
 GPT处理为死宅，但经常前后跟不上。需要换一种
 
 ## Consciously Locks One's Selective Elements syndrome / CLOSE
@@ -55,6 +68,7 @@ GPT处理为死宅，但经常前后跟不上。需要换一种
 
 ## 个别语句
 
+```plain
 2236_00.book|Assets/2236/2236_00.xlsx:PROLOGUE|520
 2236_00.book|Assets/2236/2236_00.xlsx:PROLOGUE|521
 2236_00.book|Assets/2236/2236_00.xlsx:PROLOGUE|554
@@ -81,3 +95,4 @@ GPT处理为死宅，但经常前后跟不上。需要换一种
 2236_04.book|Assets/2236/2236_04.xlsx:PHASE4|835 日文开英文关建议你们打一架
 
 2236_04.book|Assets/2236/2236_04.xlsx:PHASE4|1446
+```

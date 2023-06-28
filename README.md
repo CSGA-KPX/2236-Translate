@@ -12,19 +12,19 @@
 - [ ] 项目结束归档
 
 # 大致流程
-1. 下载安装UABEA(https://github.com/nesrak1/UABEA)。只能使用UABEA，UABE导出的格式非常难解析，而AssetStudio无法编辑资源。
+1. 下载安装UABEA( https://github.com/nesrak1/UABEA ) 。只能使用UABEA，UABE导出的格式非常难解析，而AssetStudio无法编辑资源。
 2. 以JSON格式从下列文件中导出脚本到 `uabea-dump/` ，分别在一下目录中。但实际测试中游戏使用的貌似是后者的文本。
     * ```2236 A.D. -Universal Edition-_Data\sharedassets0.assets\book*.json```
     * ```2236 A.D. -Universal Edition-_Data\StreamingAssets\2236\Windows\2236.scenarios.asset\book*.json```
 3. 使用 `2236utils dump` 生成翻译项目文件。
 4. 开始机翻
     * 谷歌翻译：
-        1. 安装API环境（https://github.com/nidhaloff/deep-translator-api）。
+        1. 安装API环境（ https://github.com/nidhaloff/deep-translator-api ）。
         2. 使用 `RunAPI.cmd` 启动API环境。
         3. 使用 `2236utils googletransen` 或者 `2236utils googletransja`开始翻译。
         4. 谷歌翻译基本没有流量控制。
     * GPT翻译：
-        1. 下载配置GalTrans环境（https://github.com/XD2333/GalTransl）。
+        1. 下载配置GalTrans环境（ https://github.com/XD2333/GalTransl ）。
         2. 使用 `2236utils GalTransDump` 生成GalTrans用的输入文件。
         3. 在GalTrans内进行翻译。
         4. 使用 `2236utils GalTransMerge` 将GalTrans生成的翻译结果汇入项目文件。
@@ -75,5 +75,7 @@
 
 
 # 致谢
+
 GPT翻译方案来自 https://github.com/XD2333/GalTransl
+
 谷歌翻译工具来自 https://github.com/nidhaloff/deep-translator-api
