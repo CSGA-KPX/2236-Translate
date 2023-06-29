@@ -348,3 +348,7 @@ Repacked2
 /uabea-windows
 /*.lnk
 /backup
+/dump/0 Raw.json
+/dump/1 Google Ja.json
+/dump/2 Google Ja_En.json
+/project.json
