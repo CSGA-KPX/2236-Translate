@@ -10,7 +10,7 @@ IF NOT EXIST "%rebuildDir%\2236.scenarios.asset" (copy backup\2236.scenarios.ass
 
 copy /B /Y "%rebuildDir%\2236.scenarios.asset" "%asset%"
 
-echo æ¸…é™¤ç¼“å­˜
+echo Çå³ý»º´æ
 
 rd /S "%USERPROFILE%\AppData\LocalLow\Unity\Chloro_2236 A_D_ -Universal Edition-"
 
