@@ -1,16 +1,21 @@
 ﻿open System
-open System.Collections.Generic
 open System.IO
-open System.Text
-
-open Argu
 
 open KPX.AD2236.Commands
 
+
 [<Literal>]
 let helpText =
-    """
+    """2236utils command args
 
+            dump   jsonPath projFile
+           merge   jsonPath projFile savePath
+        validate   projFile
+   googleTransEn   projFile
+   googleTransJa   projFile
+    GalTransDump   projFile outFile
+   GalTransMerge   transFile projFile
+           Purge   <no args>
 """
 
 let inline ensureFileExists file =
