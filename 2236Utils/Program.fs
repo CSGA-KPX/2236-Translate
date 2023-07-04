@@ -16,6 +16,8 @@ let helpText =
     GalTransDump   projFile outFile
    GalTransMerge   transFile projFile
            Purge   <no args>
+           Blame   projFile (id or id list file)
+            Lint   projFile
 """
 
 let inline ensureFileExists file =
@@ -53,6 +55,9 @@ let main args =
             | [| "validate"; projFile |] ->
                 ensureFileExists projFile
                 Validate.validate projFile
+            | [| "lint"; projFile |] ->
+                ensureFileExists projFile
+                Lint.lint projFile
             | [| "googletransen"; projFile |] ->
                 ensureFileExists projFile
                 GoogleTranslate.translate projFile GoogleTranslate.English
@@ -67,6 +72,9 @@ let main args =
                 ensureFileExists projFile
                 GalTransMerge.merge transFile projFile
             | [| "purge" |] -> Purge.purge ()
+            | [| "blame"; projFile; str |] ->
+                ensureFileExists projFile
+                Blame.blame projFile str
             | _ -> printfn $"未知指令:%A{args}"
         with e ->
             printfn $"{e.ToString()}"
