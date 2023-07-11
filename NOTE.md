@@ -58,4 +58,6 @@
 2236_07.book|Assets/2236/2236_07.xlsx:PHASE7|1890 
 2236_07.book|Assets/2236/2236_07.xlsx:PHASE7|1905
 
+2236_08.book|Assets/2236/2236_08.xlsx:PHASE8|1303 “じろー”？？
+
 ```
