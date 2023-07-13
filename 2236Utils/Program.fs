@@ -18,6 +18,7 @@ let helpText =
            Purge   <no args>
            Blame   projFile (id or id list file)
             Lint   projFile
+        Progress   projFile id
 """
 
 let inline ensureFileExists file =
@@ -75,6 +76,11 @@ let main args =
             | [| "blame"; projFile; str |] ->
                 ensureFileExists projFile
                 Blame.blame projFile str
+            | [| "progress"; projFile; id |] ->
+                ensureFileExists projFile
+                Progress.check projFile id
+
+
             | _ -> printfn $"未知指令:%A{args}"
         with e ->
             printfn $"{e.ToString()}"
