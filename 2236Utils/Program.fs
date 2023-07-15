@@ -16,9 +16,10 @@ let helpText =
     GalTransDump   projFile outFile
    GalTransMerge   transFile projFile
            Purge   <no args>
-           Blame   projFile (id or id list file)
+         Context   projFile (id or id list file)
             Lint   projFile
         Progress   projFile id
+          Search   projFile lang str
 """
 
 let inline ensureFileExists file =
@@ -73,13 +74,16 @@ let main args =
                 ensureFileExists projFile
                 GalTransMerge.merge transFile projFile
             | [| "purge" |] -> Purge.purge ()
-            | [| "blame"; projFile; str |] ->
+            | [| "ontext"; projFile; str |] ->
                 ensureFileExists projFile
-                Blame.blame projFile str
+                Context.get projFile str
             | [| "progress"; projFile; id |] ->
                 ensureFileExists projFile
                 Progress.check projFile id
+            | [| "search"; projFile; lang; str |] ->
+                ensureFileExists projFile
 
+                Search.search projFile lang str
 
             | _ -> printfn $"未知指令:%A{args}"
         with e ->

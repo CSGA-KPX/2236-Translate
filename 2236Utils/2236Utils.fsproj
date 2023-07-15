@@ -18,9 +18,10 @@
     <Compile Include="Commands\GalTransDump.fs" />
     <Compile Include="Commands\GalTransMerge.fs" />
     <Compile Include="Commands\Purge.fs" />
-    <Compile Include="Commands\Blame.fs" />
+    <Compile Include="Commands\Context.fs" />
     <Compile Include="Commands\Lint.fs" />
     <Compile Include="Commands\Progress.fs" />
+    <Compile Include="Commands\Search.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
