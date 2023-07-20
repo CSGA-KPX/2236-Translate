@@ -4,5 +4,7 @@ if "%1"=="" (
 )
 set "PATH=%cd%\2236Utils\bin\Debug\net6.0\;%PATH%"
 
+set "projFile=%~dp0\project.json"
+
 2236utils.exe
 

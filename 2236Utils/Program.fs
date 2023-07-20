@@ -8,18 +8,20 @@ open KPX.AD2236.Commands
 let helpText =
     """2236utils command args
 
-            dump   jsonPath projFile
-           merge   jsonPath projFile savePath
-        validate   projFile
-   googleTransEn   projFile
-   googleTransJa   projFile
-    GalTransDump   projFile outFile
-   GalTransMerge   transFile projFile
+        projFile   EnvironmentVar
+
+            dump   jsonPath 
+           merge   jsonPath savePath
+        validate   
+   googleTransEn   
+   googleTransJa   
+    GalTransDump   outFile
+   GalTransMerge   transFile 
            Purge   <no args>
-         Context   projFile (id or id list file)
-            Lint   projFile
-        Progress   projFile id
-          Search   projFile lang str
+         Context   (id or id list file)
+            Lint   
+        Progress   id
+          Search   lang str
 """
 
 let inline ensureFileExists file =
@@ -38,54 +40,41 @@ let inline emptyFolder path pattern =
 
 [<EntryPoint>]
 let main args =
-    if args.Length < 2 then
+    let projFile =
+        let path = Environment.GetEnvironmentVariable("projFile")
+        ensureFileExists path
+        path
+
+    if args.Length < 1 then
         Console.WriteLine(helpText)
     else
         args.[0] <- args.[0].ToLowerInvariant()
 
         try
             match args with
-            | [| "dump"; srcPath; projFile |] ->
+            | [| "dump"; srcPath |] ->
                 ensureFolderExists srcPath
-                ensureFileExists projFile
                 Dump.dump srcPath projFile
-            | [| "merge"; jsonPath; projFile; savePath |] ->
+            | [| "merge"; jsonPath; savePath |] ->
                 ensureFolderExists jsonPath
-                ensureFileExists projFile
                 emptyFolder savePath "*.json"
                 Merge.merge jsonPath projFile savePath
-            | [| "validate"; projFile |] ->
-                ensureFileExists projFile
-                Validate.validate projFile
-            | [| "lint"; projFile |] ->
-                ensureFileExists projFile
-                Lint.lint projFile
-            | [| "googletransen"; projFile |] ->
-                ensureFileExists projFile
-                GoogleTranslate.translate projFile GoogleTranslate.English
-            | [| "googletransja"; projFile |] ->
-                ensureFileExists projFile
-                GoogleTranslate.translate projFile GoogleTranslate.Japanese
-            | [| "galtransdump"; projFile; transFile |] ->
-                ensureFileExists projFile
-                GalTransDump.dump projFile transFile
-            | [| "galtransmerge"; transFile; projFile |] ->
+            | [| "validate" |] -> Validate.validate projFile
+            | [| "lint" |] -> Lint.lint projFile
+            | [| "googletransen" |] -> GoogleTranslate.translate projFile GoogleTranslate.English
+            | [| "googletransja" |] -> GoogleTranslate.translate projFile GoogleTranslate.Japanese
+            | [| "galtransdump"; transFile |] -> GalTransDump.dump projFile transFile
+            | [| "galtransmerge"; transFile |] ->
                 ensureFileExists transFile
-                ensureFileExists projFile
                 GalTransMerge.merge transFile projFile
             | [| "purge" |] -> Purge.purge ()
-            | [| "ontext"; projFile; str |] ->
-                ensureFileExists projFile
-                Context.get projFile str
-            | [| "progress"; projFile; id |] ->
-                ensureFileExists projFile
-                Progress.check projFile id
-            | [| "search"; projFile; lang; str |] ->
-                ensureFileExists projFile
+            | [| "ontext"; str |] -> Context.get projFile str
+            | [| "progress"; id |] -> Progress.check projFile id
+            | [| "search"; lang; str |] -> Search.search projFile lang str
 
-                Search.search projFile lang str
-
-            | _ -> printfn $"未知指令:%A{args}"
+            | _ -> 
+                printfn $"未知指令:%A{args}"
+                Console.WriteLine(helpText)
         with e ->
             printfn $"{e.ToString()}"
 
