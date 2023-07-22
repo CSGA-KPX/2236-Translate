@@ -68,7 +68,7 @@ let main args =
                 ensureFileExists transFile
                 GalTransMerge.merge transFile projFile
             | [| "purge" |] -> Purge.purge ()
-            | [| "ontext"; str |] -> Context.get projFile str
+            | [| "context"; str |] -> Context.get projFile str
             | [| "progress"; id |] -> Progress.check projFile id
             | [| "search"; lang; str |] -> Search.search projFile lang str
 
