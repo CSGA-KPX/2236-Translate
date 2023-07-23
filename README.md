@@ -10,7 +10,7 @@
 - [x] GPT3.5机翻（日）
 - [x] 词汇表
 - [ ] 人工检查
-    * 文本检查 @ ```2236_13.book|Assets/2236/2236_13.xlsx:PHASE13|610```
+    * 文本检查 @ ```2236_14.book|Assets/2236/2236_14.xlsx:PHASE14|21```
     * 游戏内检查 @ ```2236_06.book|Assets/2236/2236_06.xlsx:PHASE6|23```
 - [ ] 完成 `2236utils lint` 检查
 - [ ] 发布alpha补丁
@@ -42,86 +42,6 @@
 
 备注：建议替换游戏字体为思源黑体，游戏内为小冢黑体对中文支持不佳。相关字体文件位于 `sharedassets0.assets` 中。
 
-## 大致文本量
-
-| 章节名   | 起始行 | 文本量 |
-| -------- | ------ | ------ |
-| Start    | 3      | 36     |
-| PROLOGUE | 39     | 3663   |
-| PHASE 1  | 3702   | 8397   |
-| PHASE 2  | 12099  | 6057   |
-| PHASE 3  | 18156  | 5859   |
-| PHASE 4  | 24015  | 11133  |
-| PHASE 5  | 35148  | 7947   |
-| PHASE 6  | 43095  | 13014  |
-| PHASE 7  | 56109  | 9459   |
-| PHASE 8  | 65568  | 10665  |
-| PHASE 9  | 76233  | 6831   |
-| PHASE10  | 83064  | 6480   |
-| PHASE11  | 89544  | 7245   |
-| PHASE12  | 96789  | 6237   |
-| PHASE13  | 103026 | 5571   |
-| PHASE14  | 108597 | 10719  | 
-| PHASE15  | 119316 | 3942   |
-| PHASE16  | 123258 | 5022   |
-| PHASE16Y | 128280 | 3123   |
-| PHASE17  | 131403 | 8217   |
-| PHASE17Y | 139620 | 5373   |
-| PHASE18  | 144993 | 28935  |
-| PHASE18H | 173928 | 7047   |
-| PHASE18Y | 180975 | 1899   |
-| PHASE19  | 182874 | 9512   |
-
-```
-PHASE 13 ：
-S1=857 S2=873 S3=889 S4=905 1-4共16种组合
-分歧簇：1136、1249
-
-PHASE 14 
-S1=612 S2=625 S3=638 S4=651
-分歧簇667: 2236=*correct_key；668：2025=*alternative_universe；669=*wrong_key
-分支内容：
-    *alternative_universe @ 670~676 -> 1240*wonderland
-    *wrong_key @ 677 ~ 701 -> END
-    *correct_key @ 702- *PHASE15
-    
-PHASE 15 :
-S1=861 (复杂) 去见=a；不去=b
-
-
-分支：
-    *branch15a @ 870 -> *PHASE16y -> *PHASE17y -> *PHASE18y
-    *branch15b @ 880 -> *PHASE16  -> *PHASE17
-
-
-PHASE17:
-S1= 3544 去=a；不去=b
-
-分支：
-    *branch18a @ 3546 -> *PHASE18h -> END
-    *branch18b @ 3553 -> *PHASE18
-   
-PHASE18:
-S1=1806 a1=シライシ a2=マスコ
-S2=4185 b1=开心 b2=不开心
-S3=4562 c1=删除 c2=不删除
-S4=5708 d1=去看 d2=不去看
-
-分支：
-    * @ 1081 not Megane -> *18Megane1 @ 1083 -> Megane=true  -> *18Join @ 1148
-    * @ 1082     Megane -> *18Megane2 @ 1110 -> Megane=false -> *18Join @ 1148
-    
-    * 18a2 @ 1808 -> 2229 END
-    * 18a1 @ 2230 -> S2
-    
-    * 18b1 -> 18b2 -> （是不是被删了） -> S3
-    
-    * 18c2 @ 4564 -> END
-    * 18c1 @ 4662 -> S4
-    
-    * 18d2 @ 5709 -> END
-    * 18d1 @ 5838 -> *PHASE19
-```
 # 致谢
 
 GPT翻译方案来自 https://github.com/XD2333/GalTransl
