@@ -88,9 +88,11 @@ S4@5708 去看=d1 不去看=d2
 ## 个别语句
 
 ```plain
-2236_00.book|Assets/2236/2236_00.xlsx:PROLOGUE|520
-2236_00.book|Assets/2236/2236_00.xlsx:PROLOGUE|521
-2236_00.book|Assets/2236/2236_00.xlsx:PROLOGUE|554
+2236_00.book|Assets/2236/2236_00.xlsx:PROLOGUE|544
+2236_00.book|Assets/2236/2236_00.xlsx:PROLOGUE|545
+
+2236_00.book|Assets/2236/2236_00.xlsx:PROLOGUE|566
+
 
 2236_01.book|Assets/2236/2236_01.xlsx:PHASE1|1741
 
