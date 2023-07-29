@@ -29,7 +29,7 @@ S1@612 S2@625 S3@638 S4@651
 2. 2025 -> \*alternate_universe @ 670 -> \*wonderland @1240 -> 结束
 3. 其他 -> \*wrong_key @ 677 -> 结束
 
-## PHASE16
+## PHASE15
 S1@861 去=a 不去=b  
 分支  
 * a @ 870 -> \*PHASE16y -> \*PHASE17y -> \*PHASE18y (春线）
@@ -85,11 +85,12 @@ S4@5708 去看=d1 不去看=d2
 
 区别男孩|女孩和男生|女生…………
 
+エス -> S
+
 ## 个别语句
 
 ```plain
 
-2236_02.book|Assets/2236/2236_02.xlsx:PHASE2|29
 2236_02.book|Assets/2236/2236_02.xlsx:PHASE2|209
 2236_02.book|Assets/2236/2236_02.xlsx:PHASE2|261
 2236_02.book|Assets/2236/2236_02.xlsx:PHASE2|491
@@ -173,6 +174,14 @@ S4@5708 去看=d1 不去看=d2
 2236_13.book|Assets/2236/2236_13.xlsx:PHASE13|433 丸投げ 不太理解
 
 2236_13.book|Assets/2236/2236_13.xlsx:PHASE13|445 三种什么？
+
+2236_14.book|Assets/2236/2236_14.xlsx:PHASE14|924 『運動』
+
+2236_15.book|Assets/2236/2236_15.xlsx:PHASE15|35 臍で茶を沸かす
+
+2236_15.book|Assets/2236/2236_15.xlsx:PHASE15|56
+
+2236_15.book|Assets/2236/2236_15.xlsx:PHASE15|123 doppelgangers 分身有点奇怪，二重身好像用得比较多？
 
 圣经段落：使用中文标准译本
     2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|823 ――起初，神创造诸天和大地。
