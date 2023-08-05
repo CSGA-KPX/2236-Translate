@@ -196,7 +196,23 @@ PHASE16 MASUKO的对话
 
 2236_16.book|Assets/2236/2236_16.xlsx:PHASE16|908
 
-2236_17.book|Assets/2236/2236_17.xlsx:PHASE17|10 开始来自几何原本，同样来自12|553
+2236_17.book|Assets/2236/2236_17.xlsx:PHASE17|10 开始来自几何原本，同样来自12|553。但是删掉了几个定义
+
+2236_17.book|Assets/2236/2236_17.xlsx:PHASE17|332 orientation
+
+2236_17.book|Assets/2236/2236_17.xlsx:PHASE17|583 Akashic单独出现了
+
+2236_17.book|Assets/2236/2236_17.xlsx:PHASE17|700 意(xia)译(bian)了
+
+2236_17.book|Assets/2236/2236_17.xlsx:PHASE17|717 Akashic record（唱片）和Akashic records（记录）的笑话吧
+
+2236_17.book|Assets/2236/2236_17.xlsx:PHASE17|1145 开始来自几何原本，同样来自12|553。把17|10删掉的定义补回去了。
+
+2236_17.book|Assets/2236/2236_17.xlsx:PHASE17|2908
+
+2236_17.book|Assets/2236/2236_17.xlsx:PHASE17|3029 开始是日文读音机制，确定人名后需要单独处理
+
+2236_17.book|Assets/2236/2236_17.xlsx:PHASE17|3313
 
 圣经段落：使用中文标准译本
     2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|823 ――起初，神创造诸天和大地。
