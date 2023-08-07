@@ -214,6 +214,16 @@ PHASE16 MASUKO的对话
 
 2236_17.book|Assets/2236/2236_17.xlsx:PHASE17|3313
 
+2236_18.book|Assets/2236/2236_18.xlsx:PHASE18|141
+
+2236_18.book|Assets/2236/2236_18.xlsx:PHASE18|431 画になりますねぇ
+
+2236_18.book|Assets/2236/2236_18.xlsx:PHASE18|774 的1/500没找到什么意思
+
+2236_18.book|Assets/2236/2236_18.xlsx:PHASE18|803 キャットウォーク 在建筑上的国内叫法是马道，不太常用所以用检修通道。（ https://www.zhihu.com/question/60635117/answer/184574438 ） 
+
+2236_18.book|Assets/2236/2236_18.xlsx:PHASE18|1187 查了一下室外和仪仗队用的是进行圆号Mellophone，而不是法国圆号。游戏内没有CG作证据，可能原文错了。。吧
+
 圣经段落：使用中文标准译本
     2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|823 ――起初，神创造诸天和大地。
     2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|853 ――那时大地空虚混沌，黑暗在渊面上，神的灵运行在水面上。

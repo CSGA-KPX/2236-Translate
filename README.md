@@ -10,7 +10,7 @@
 - [x] GPT3.5机翻（日）
 - [x] 词汇表
 - [ ] 人工检查
-    * 1pass ```2236_18.book|Assets/2236/2236_18.xlsx:PHASE18|20```
+    * 1pass ```2236_18.book|Assets/2236/2236_18.xlsx:PHASE18|1187```
     * 2pass ```2236_02.book|Assets/2236/2236_02.xlsx:PHASE2|104```
     * 游戏内检查 @ ``` N/A ```
 - [ ] 完成 `2236utils lint` 检查
