@@ -214,6 +214,8 @@ PHASE16 MASUKO的对话
 
 2236_17.book|Assets/2236/2236_17.xlsx:PHASE17|3313
 
+2236_18h.book|Assets/2236/2236_18h.xlsx:PHASE18h|1894 根据 https://eats.jp/cn/detail/100549  笹団子 -> 竹饺/莎莎团子
+
 2236_18.book|Assets/2236/2236_18.xlsx:PHASE18|141
 
 2236_18.book|Assets/2236/2236_18.xlsx:PHASE18|431 画になりますねぇ
@@ -225,6 +227,8 @@ PHASE16 MASUKO的对话
 2236_18.book|Assets/2236/2236_18.xlsx:PHASE18|1187 查了一下室外和仪仗队用的是进行圆号Mellophone，而不是法国圆号。游戏内没有CG作证据，可能原文错了。。吧
 
 2236_18.book|Assets/2236/2236_18.xlsx:PHASE18|1926 なっちゃん 名字缩写呢
+
+2236_18.book|Assets/2236/2236_18.xlsx:PHASE18|2782 ぽっぽ焼き  根据 https://weibo.com/2571780062/Aa9jhAyFG 按popo烧处理
 
 圣经段落：使用中文标准译本
     2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|823 ――起初，神创造诸天和大地。
