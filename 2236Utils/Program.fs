@@ -40,10 +40,7 @@ let inline emptyFolder path pattern =
 
 [<EntryPoint>]
 let main args =
-    let projFile =
-        let path = Environment.GetEnvironmentVariable("projFile")
-        ensureFileExists path
-        path
+    let projFile = Environment.GetEnvironmentVariable("projFile")
 
     if args.Length < 1 then
         Console.WriteLine(helpText)
@@ -52,27 +49,44 @@ let main args =
 
         try
             match args with
-            | [| "dump"; srcPath |] ->
-                ensureFolderExists srcPath
-                Dump.dump srcPath projFile
+            | [| "dump"; srcPath |] -> Dump.dump srcPath projFile
             | [| "merge"; jsonPath; savePath |] ->
                 ensureFolderExists jsonPath
                 emptyFolder savePath "*.json"
+                ensureFileExists projFile
                 Merge.merge jsonPath projFile savePath
-            | [| "validate" |] -> Validate.validate projFile
-            | [| "lint" |] -> Lint.lint projFile
-            | [| "googletransen" |] -> GoogleTranslate.translate projFile GoogleTranslate.English
-            | [| "googletransja" |] -> GoogleTranslate.translate projFile GoogleTranslate.Japanese
-            | [| "galtransdump"; transFile |] -> GalTransDump.dump projFile transFile
+            | [| "validate" |] ->
+
+                ensureFileExists projFile
+                Validate.validate projFile
+            | [| "lint" |] ->
+                ensureFileExists projFile
+                Lint.lint projFile
+            | [| "googletransen" |] ->
+                ensureFileExists projFile
+                GoogleTranslate.translate projFile GoogleTranslate.English
+            | [| "googletransja" |] ->
+                ensureFileExists projFile
+                GoogleTranslate.translate projFile GoogleTranslate.Japanese
+            | [| "galtransdump"; transFile |] ->
+                ensureFileExists projFile
+                GalTransDump.dump projFile transFile
             | [| "galtransmerge"; transFile |] ->
                 ensureFileExists transFile
+                ensureFileExists projFile
                 GalTransMerge.merge transFile projFile
             | [| "purge" |] -> Purge.purge ()
-            | [| "context"; str |] -> Context.get projFile str
-            | [| "progress"; id |] -> Progress.check projFile id
-            | [| "search"; lang; str |] -> Search.search projFile lang str
+            | [| "context"; str |] ->
+                ensureFileExists projFile
+                Context.get projFile str
+            | [| "progress"; id |] ->
+                ensureFileExists projFile
+                Progress.check projFile id
+            | [| "search"; lang; str |] ->
+                ensureFileExists projFile
+                Search.search projFile lang str
 
-            | _ -> 
+            | _ ->
                 printfn $"未知指令:%A{args}"
                 Console.WriteLine(helpText)
         with e ->
