@@ -22,6 +22,7 @@
     <Compile Include="Commands\Lint.fs" />
     <Compile Include="Commands\Progress.fs" />
     <Compile Include="Commands\Search.fs" />
+    <Compile Include="Commands\Test.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 

@@ -1,6 +1,9 @@
 ﻿open System
 open System.IO
 
+open Newtonsoft.Json
+open Newtonsoft.Json.Linq
+
 open KPX.AD2236.Commands
 
 
@@ -86,6 +89,10 @@ let main args =
                 ensureFileExists projFile
                 Search.search projFile lang str
 
+            | [| "test" |] -> 
+                ensureFileExists projFile
+                Test.test projFile
+                
             | _ ->
                 printfn $"未知指令:%A{args}"
                 Console.WriteLine(helpText)
