@@ -90,18 +90,8 @@ S4@5708 去看=d1 不去看=d2
 ## 个别语句
 
 ```plain
-
-2236_02.book|Assets/2236/2236_02.xlsx:PHASE2|209
-2236_02.book|Assets/2236/2236_02.xlsx:PHASE2|261
-2236_02.book|Assets/2236/2236_02.xlsx:PHASE2|491
+2236_02.book|Assets/2236/2236_02.xlsx:PHASE2|260 "夢ってどうして”くさかんむり” 怎么理解？
 2236_02.book|Assets/2236/2236_02.xlsx:PHASE2|913 -- 不安还是讨厌？
-2236_02.book|Assets/2236/2236_02.xlsx:PHASE2|1033
-
-2236_03.book|Assets/2236/2236_03.xlsx:PHASE3|156
-2236_03.book|Assets/2236/2236_03.xlsx:PHASE3|597
-2236_03.book|Assets/2236/2236_03.xlsx:PHASE3|857
-
-2236_03.book|Assets/2236/2236_03.xlsx:PHASE3|1285
 
 2236_04.book|Assets/2236/2236_04.xlsx:PHASE4|134
 2236_04.book|Assets/2236/2236_04.xlsx:PHASE4|162
