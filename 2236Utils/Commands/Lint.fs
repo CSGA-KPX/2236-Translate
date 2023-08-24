@@ -14,16 +14,22 @@ type private LintRule =
       Func: ExportItem -> bool }
 
 let private lintRules =
-    [ { Name = "半角标点"
-        Func = (fun item -> item.Final |> String.exists (fun c -> Char.IsAscii c && Char.IsPunctuation c)) }
-      { Name = "标点不匹配"
-        Func =
+    [ //{ Name = "半角标点"
+      //  Func = (fun item -> item.Final |> String.exists (fun c -> Char.IsAscii c && Char.IsPunctuation c)) }
+      { Name = "换行错误"
+        Func = 
           (fun item ->
-              checkPunctuation
-              |> Array.exists (fun pun ->
-                  let ja = item.Jpn.Contains(pun)
-                  let en = item.Final.Contains(pun)
-                  ja <> en)) }
+            let ja = item.Jpn.Contains('\n')
+            let en = item.Final.Contains('\n')
+            ja <> en) }
+      //{ Name = "标点不匹配"
+      //  Func =
+      //    (fun item ->
+      //        checkPunctuation
+      //        |> Array.exists (fun pun ->
+      //           let ja = item.Jpn.Contains(pun)
+      //           let en = item.Final.Contains(pun)
+      //           ja <> en)) }
       { Name = "错误标点"
         Func = (fun item -> item.Final.Contains("。」")) } ]
 

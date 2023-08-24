@@ -93,11 +93,12 @@ S4@5708 去看=d1 不去看=d2
 2236_02.book|Assets/2236/2236_02.xlsx:PHASE2|260 "夢ってどうして”くさかんむり” 怎么理解？
 2236_02.book|Assets/2236/2236_02.xlsx:PHASE2|913 -- 不安还是讨厌？
 
-2236_04.book|Assets/2236/2236_04.xlsx:PHASE4|134
-2236_04.book|Assets/2236/2236_04.xlsx:PHASE4|162
+2236_04.book|Assets/2236/2236_04.xlsx:PHASE4|134 猫の額よ、あら、雀の涙だったかしら
 2236_04.book|Assets/2236/2236_04.xlsx:PHASE4|365 BCAH SKHK
+2236_04.book|Assets/2236/2236_04.xlsx:PHASE4|469 船頭多くして船山に登る
+2236_04.book|Assets/2236/2236_04.xlsx:PHASE4|835 開いて 但实际语境应该是关闭
 
-2236_04.book|Assets/2236/2236_04.xlsx:PHASE4|835 日文开英文关建议你们打一架
+2236_04.book|Assets/2236/2236_04.xlsx:PHASE4|1191 脑筋急转弯
 
 2236_04.book|Assets/2236/2236_04.xlsx:PHASE4|1446 リール是什么东西
 
@@ -116,6 +117,8 @@ S4@5708 去看=d1 不去看=d2
 
 2236_07.book|Assets/2236/2236_07.xlsx:PHASE7|1890 
 2236_07.book|Assets/2236/2236_07.xlsx:PHASE7|1905
+
+2236_08.book|Assets/2236/2236_08.xlsx:PHASE8|380
 
 2236_08.book|Assets/2236/2236_08.xlsx:PHASE8|1303 “じろー”？？
 
