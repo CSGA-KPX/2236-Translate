@@ -93,27 +93,26 @@ S4@5708 去看=d1 不去看=d2
 2236_02.book|Assets/2236/2236_02.xlsx:PHASE2|260 "夢ってどうして”くさかんむり” 怎么理解？
 2236_02.book|Assets/2236/2236_02.xlsx:PHASE2|913 -- 不安还是讨厌？
 
-2236_04.book|Assets/2236/2236_04.xlsx:PHASE4|134 猫の額よ、あら、雀の涙だったかしら
-2236_04.book|Assets/2236/2236_04.xlsx:PHASE4|365 BCAH SKHK
-2236_04.book|Assets/2236/2236_04.xlsx:PHASE4|469 船頭多くして船山に登る
-2236_04.book|Assets/2236/2236_04.xlsx:PHASE4|835 開いて 但实际语境应该是关闭
-
+2236_04.book|Assets/2236/2236_04.xlsx:PHASE4|134  猫の額よ、あら、雀の涙だったかしら
+2236_04.book|Assets/2236/2236_04.xlsx:PHASE4|365  BCAH SKHK
+2236_04.book|Assets/2236/2236_04.xlsx:PHASE4|469  船頭多くして船山に登る
+2236_04.book|Assets/2236/2236_04.xlsx:PHASE4|835  開いて 但实际语境应该是关闭
 2236_04.book|Assets/2236/2236_04.xlsx:PHASE4|1191 脑筋急转弯
-
-2236_04.book|Assets/2236/2236_04.xlsx:PHASE4|1446 リール是什么东西
+2236_04.book|Assets/2236/2236_04.xlsx:PHASE4|1446 リール是卷轴？
+2236_04.book|Assets/2236/2236_04.xlsx:PHASE4|1805 机器人/后续剧情会使用片假名替换平假名，中文是否处理？
 
 2236_05.book|Assets/2236/2236_05.xlsx:PHASE5|343 動くフレーズのピッチ
+2236_05.book|Assets/2236/2236_05.xlsx:PHASE5|350 シャープ 按照音高还是音色解释？
 
 2236_05.book|Assets/2236/2236_05.xlsx:PHASE5|1279 
-2236_05.book|Assets/2236/2236_05.xlsx:PHASE5|1283 同上，ジョギリ是个嘛玩意？
+2236_05.book|Assets/2236/2236_05.xlsx:PHASE5|1283 同上，ジョギリってのは、映画のなかで殺人鬼が振るう、ノコギリ刃のついた巨大なナイフだ！（https://note.com/hitkawa/n/n2544ac284918）
 
-2236_06.book|Assets/2236/2236_06.xlsx:PHASE6|82 温差
-
+2236_06.book|Assets/2236/2236_06.xlsx:PHASE6|62 确认下游戏内情况
 2236_06.book|Assets/2236/2236_06.xlsx:PHASE6|575 
     没看懂。我怀疑英日都是拼音文字，中文是表意文字。所以在没有语音的情况下会歧义或者无法理解？私可以作为“シ”，“わたくし/わたし”，“ひそか”去理解？
     但中文很少存在这个情况，常见在所谓的中文十级考试里（能穿多少穿多少），所以我换了个多音字看对不对吧
     
-2236_06.book|Assets/2236/2236_06.xlsx:PHASE6|224 やんなちゃうな口语吧？看不懂
+2236_06.book|Assets/2236/2236_06.xlsx:PHASE6|2241 やんなちゃうな。。感觉是方言
 
 2236_07.book|Assets/2236/2236_07.xlsx:PHASE7|1890 
 2236_07.book|Assets/2236/2236_07.xlsx:PHASE7|1905
