@@ -89,14 +89,53 @@ PHASE8之前，检查Final.*マスコ「.*ヨツバ
 
 エス -> S
 
+## 引用及考据
+
 panta rhei ：万物流转
 
+2236_05.book|Assets/2236/2236_05.xlsx:PHASE5|1279 
+2236_05.book|Assets/2236/2236_05.xlsx:PHASE5|1283 同上，ジョギリってのは、映画のなかで殺人鬼が振るう、ノコギリ刃のついた巨大なナイフだ！（https://note.com/hitkawa/n/n2544ac284918）
+
+2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|553 来自《几何原本》第一卷，译者张卜天
+
+2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|555 来自苏格拉底的申辩。《游叙弗伦 苏格拉底的申辩 克力同》译者严群
+
+2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|558 来自《赫拉克利特著作残篇：希腊语、英、汉对照 》， 楚荷中译
+
+2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|559 来自EVA真心为你的海报
+
+2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|560 怀疑是河野裕的《消失吧，群青（いなくなれ、群青）》
+
+2236_15.book|Assets/2236/2236_15.xlsx:PHASE15|123 doppelgangers 分身有点奇怪，二重身好像用得比较多？
+
+2236_17.book|Assets/2236/2236_17.xlsx:PHASE17|10 开始来自几何原本，同样来自12|553。但是删掉了几个定义
+
+2236_17.book|Assets/2236/2236_17.xlsx:PHASE17|1145 开始来自几何原本，同样来自12|553。把17|10删掉的定义补回去了。
+
+2236_18.book|Assets/2236/2236_18.xlsx:PHASE18|803 キャットウォーク 在建筑上的国内叫法是猫道，不太常用所以用检修通道。（ https://www.zhihu.com/question/60635117/answer/184574438 ） 
+
+2236_18h.book|Assets/2236/2236_18h.xlsx:PHASE18h|1894 根据 https://eats.jp/cn/detail/100549  笹団子 -> 竹饺/莎莎团子
+
+2236_18.book|Assets/2236/2236_18.xlsx:PHASE18|1187 查了一下室外和仪仗队用的是进行圆号Mellophone，而不是法国圆号。游戏内没有CG作证据，可能原文错了…………吧
+
+2236_18.book|Assets/2236/2236_18.xlsx:PHASE18|2782 ぽっぽ焼き  根据 https://weibo.com/2571780062/Aa9jhAyFG 按popo烧处理
+
+希伯来语段落：圣经部分使用中文标准译本
+    2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|823 ――起初，神创造诸天和大地。
+    2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|853 ――那时大地空虚混沌，黑暗在渊面上，神的灵运行在水面上。
+    2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|857 ――神说：「要有光」，就有了光。
+    2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|871 ――神看光是好的。神把光和黑暗分开。
+    2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|887 ――‏‏神称光为「昼」，称黑暗为「夜」。有晚上，有早晨；这是第一日。
+    2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|897 ――神说「让众水之间有穹苍，把水和水分开」
+    2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|905 ――‏神造了穹苍，分水在穹苍以下的，与穹苍以上的之间。
+    2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|916 ――‏神称穹苍为「天」。有晚上，有早晨；这是第二日。
+    
+    2236_19.book|Assets/2236/2236_19.xlsx:PHASE19|2016 希伯来语אֱנוֹשׁ，以挪士。软弱必死的人，人，凡人 （https://zh.wikipedia.org/zh-hans/%E4%BB%A5%E6%8C%AA%E5%A3%AB）
 
 ## 个别语句
 
 ```plain
 2236_02.book|Assets/2236/2236_02.xlsx:PHASE2|260 "夢ってどうして”くさかんむり” 怎么理解？
-2236_02.book|Assets/2236/2236_02.xlsx:PHASE2|913 -- 不安还是讨厌？
 
 2236_04.book|Assets/2236/2236_04.xlsx:PHASE4|134  猫の額よ、あら、雀の涙だったかしら
 2236_04.book|Assets/2236/2236_04.xlsx:PHASE4|365  BCAH SKHK
@@ -108,9 +147,6 @@ panta rhei ：万物流转
 
 2236_05.book|Assets/2236/2236_05.xlsx:PHASE5|343 動くフレーズのピッチ
 2236_05.book|Assets/2236/2236_05.xlsx:PHASE5|350 シャープ 按照音高还是音色解释？
-
-2236_05.book|Assets/2236/2236_05.xlsx:PHASE5|1279 
-2236_05.book|Assets/2236/2236_05.xlsx:PHASE5|1283 同上，ジョギリってのは、映画のなかで殺人鬼が振るう、ノコギリ刃のついた巨大なナイフだ！（https://note.com/hitkawa/n/n2544ac284918）
 
 2236_06.book|Assets/2236/2236_06.xlsx:PHASE6|62 确认下游戏内情况
 2236_06.book|Assets/2236/2236_06.xlsx:PHASE6|575 
@@ -133,8 +169,6 @@ panta rhei ：万物流转
 
 2236_10.book|Assets/2236/2236_10.xlsx:PHASE10|409 PASS之间会叫做人吗？“个体”会不会好一点
 
-2236_10.book|Assets/2236/2236_10.xlsx:PHASE10|1264 邮件抬头
-
 2236_10.book|Assets/2236/2236_10.xlsx:PHASE10|1265 有限指什么？
     根据2236_11.book|Assets/2236/2236_11.xlsx:PHASE11|536，大概是篇幅
 
@@ -146,23 +180,13 @@ panta rhei ：万物流转
 
 2236_11.book|Assets/2236/2236_11.xlsx:PHASE11|1340 处理“馬鹿と鋏は使いよう”
 
-2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|160-190 祷词
+2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|160-190 祷词，需要帮忙处理
 
-2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|250 Dワードクリア
+2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|250 Dワードクリア 上下文都是计算机领域词汇，DWORD会比较合适。
 
 2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|294 下的含义
 
-2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|531 多重确信
-
-2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|553 开始来自《几何原本》第一卷，译者张卜天
-
-2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|555 来自苏格拉底的申辩。《游叙弗伦 苏格拉底的申辩 克力同》译者严群
-
-2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|558 来自《赫拉克利特著作残篇：希腊语、英、汉对照 》， 楚荷中译
-
-2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|559 来自EVA真心为你的海报
-
-2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|560 怀疑是河野裕的《消失吧，群青（いなくなれ、群青）》
+2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|531 多重确信，语法搞不懂
 
 2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|521 开门关门？
 2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|692 开门关门？
@@ -182,8 +206,6 @@ PHASE16 MASUKO的对话
 
 2236_15.book|Assets/2236/2236_15.xlsx:PHASE15|56
 
-2236_15.book|Assets/2236/2236_15.xlsx:PHASE15|123 doppelgangers 分身有点奇怪，二重身好像用得比较多？
-
 2236_17y.book|Assets/2236/2236_17y.xlsx:PHASE17y|841 以及841开始的「失」按哪个词解释？失去 消失 迷失？语境要感觉需要一个主动的词，选择了“抛弃”
 
 开场视频的文字在PHASE18y|466被提到了。需要统一翻译
@@ -194,8 +216,6 @@ PHASE16 MASUKO的对话
 
 2236_16.book|Assets/2236/2236_16.xlsx:PHASE16|908
 
-2236_17.book|Assets/2236/2236_17.xlsx:PHASE17|10 开始来自几何原本，同样来自12|553。但是删掉了几个定义
-
 2236_17.book|Assets/2236/2236_17.xlsx:PHASE17|332 orientation
 
 2236_17.book|Assets/2236/2236_17.xlsx:PHASE17|583 Akashic单独出现了
@@ -204,15 +224,11 @@ PHASE16 MASUKO的对话
 
 2236_17.book|Assets/2236/2236_17.xlsx:PHASE17|717 Akashic record（唱片）和Akashic records（记录）的笑话吧
 
-2236_17.book|Assets/2236/2236_17.xlsx:PHASE17|1145 开始来自几何原本，同样来自12|553。把17|10删掉的定义补回去了。
-
 2236_17.book|Assets/2236/2236_17.xlsx:PHASE17|2908
 
 2236_17.book|Assets/2236/2236_17.xlsx:PHASE17|3029 开始是日文读音机制，确定人名后需要单独处理
 
 2236_17.book|Assets/2236/2236_17.xlsx:PHASE17|3313
-
-2236_18h.book|Assets/2236/2236_18h.xlsx:PHASE18h|1894 根据 https://eats.jp/cn/detail/100549  笹団子 -> 竹饺/莎莎团子
 
 2236_18.book|Assets/2236/2236_18.xlsx:PHASE18|141
 
@@ -220,13 +236,7 @@ PHASE16 MASUKO的对话
 
 2236_18.book|Assets/2236/2236_18.xlsx:PHASE18|774 的1/500没找到什么意思
 
-2236_18.book|Assets/2236/2236_18.xlsx:PHASE18|803 キャットウォーク 在建筑上的国内叫法是马道，不太常用所以用检修通道。（ https://www.zhihu.com/question/60635117/answer/184574438 ） 
-
-2236_18.book|Assets/2236/2236_18.xlsx:PHASE18|1187 查了一下室外和仪仗队用的是进行圆号Mellophone，而不是法国圆号。游戏内没有CG作证据，可能原文错了。。吧
-
 2236_18.book|Assets/2236/2236_18.xlsx:PHASE18|1926 なっちゃん 名字缩写呢
-
-2236_18.book|Assets/2236/2236_18.xlsx:PHASE18|2782 ぽっぽ焼き  根据 https://weibo.com/2571780062/Aa9jhAyFG 按popo烧处理
 
 2236_18.book|Assets/2236/2236_18.xlsx:PHASE18|3062 开始的小写假名。。看怎么处理
 
@@ -242,17 +252,6 @@ PHASE16 MASUKO的对话
 
 2236_19.book|Assets/2236/2236_19.xlsx:PHASE19|1812 你妈的日本人！！！ 确定人名以后用紫苑 和紫菀？
 
-2236_19.book|Assets/2236/2236_19.xlsx:PHASE19|2016 希伯来语处理？
-
 2236_19.book|Assets/2236/2236_19.xlsx:PHASE19|2089 不确定「自分」指的是谁
 
-圣经段落：使用中文标准译本
-    2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|823 ――起初，神创造诸天和大地。
-    2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|853 ――那时大地空虚混沌，黑暗在渊面上，神的灵运行在水面上。
-    2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|857 ――神说：「要有光」，就有了光。
-    2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|871 ――神看光是好的。神把光和黑暗分开。
-    2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|887 ――‏‏神称光为「昼」，称黑暗为「夜」。有晚上，有早晨；这是第一日。
-    2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|897 ――神说「让众水之间有穹苍，把水和水分开」
-    2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|905 ――‏神造了穹苍，分水在穹苍以下的，与穹苍以上的之间。
-    2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|916 ――‏神称穹苍为「天」。有晚上，有早晨；这是第二日。
 ```
