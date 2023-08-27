@@ -19,8 +19,8 @@ let private lintRules =
       { Name = "换行错误"
         Func = 
           (fun item ->
-            let ja = item.Jpn.Contains('\n')
-            let en = item.Final.Contains('\n')
+            let ja = item.Jpn.StartsWith('\n')
+            let en = item.Final.StartsWith('\n')
             ja <> en) }
       //{ Name = "标点不匹配"
       //  Func =

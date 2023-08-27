@@ -11,7 +11,7 @@
 - [x] 词汇表
 - [ ] 人工检查
     * 1pass 完成
-    * 2pass ```2236_06.book|Assets/2236/2236_06.xlsx:PHASE6|803```
+    * 2pass ```2236_07.book|Assets/2236/2236_07.xlsx:PHASE7|11``` 完成（原定修正PHASE6和之前的错误）
     * 游戏内检查 @ ``` N/A ```
 - [ ] 完成 `2236utils lint` 检查
 - [ ] 发布alpha补丁
