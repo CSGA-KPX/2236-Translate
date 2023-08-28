@@ -90,7 +90,7 @@ PHASE8之前，检查Final.*マスコ「.*ヨツバ
 エス -> S
 
 ## 引用及考据
-
+```
 panta rhei ：万物流转
 
 2236_05.book|Assets/2236/2236_05.xlsx:PHASE5|1279 
@@ -131,7 +131,7 @@ panta rhei ：万物流转
     2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|916 ――‏神称穹苍为「天」。有晚上，有早晨；这是第二日。
     
     2236_19.book|Assets/2236/2236_19.xlsx:PHASE19|2016 希伯来语אֱנוֹשׁ，以挪士。软弱必死的人，人，凡人 （https://zh.wikipedia.org/zh-hans/%E4%BB%A5%E6%8C%AA%E5%A3%AB）
-
+```
 ## 个别语句
 
 ```plain
@@ -155,11 +155,12 @@ panta rhei ：万物流转
     
 2236_06.book|Assets/2236/2236_06.xlsx:PHASE6|2241 やんなちゃうな。。感觉是方言
 2236_06.book|Assets/2236/2236_06.xlsx:PHASE6|2845 机械化一点？
-2236_06.book|Assets/2236/2236_06.xlsx:PHASE6|2912 
+2236_06.book|Assets/2236/2236_06.xlsx:PHASE6|2912 在游戏里还是不理解这里的维特根斯坦是什么意思
 
 2236_07.book|Assets/2236/2236_07.xlsx:PHASE7|1905
 
 2236_08.book|Assets/2236/2236_08.xlsx:PHASE8|380
+2236_08.book|Assets/2236/2236_08.xlsx:PHASE8|381
 
 2236_08.book|Assets/2236/2236_08.xlsx:PHASE8|1303 “じろー”？？
 
