@@ -23,14 +23,21 @@
     <Compile Include="Commands\Progress.fs" />
     <Compile Include="Commands\Search.fs" />
     <Compile Include="Commands\Test.fs" />
+    <Compile Include="Commands\RepackV2.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
-
-  <ItemGroup />
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="SwaggerProvider" Version="2.0.0-theta-001" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AssetsTools.NET-0af9e6f3090b4c7a23c7ea57cbaf7fd357d13926\AssetsTools.NET.Cpp2IL\AssetsTools.NET.Cpp2IL.csproj" />
+    <ProjectReference Include="..\AssetsTools.NET-0af9e6f3090b4c7a23c7ea57cbaf7fd357d13926\AssetsTools.NET.MonoCecil\AssetsTools.NET.MonoCecil.csproj" />
+    <ProjectReference Include="..\AssetsTools.NET-0af9e6f3090b4c7a23c7ea57cbaf7fd357d13926\AssetsTools.NET.Texture\AssetsTools.NET.Texture.csproj" />
+    <ProjectReference Include="..\AssetsTools.NET-0af9e6f3090b4c7a23c7ea57cbaf7fd357d13926\AssetTools.NET\AssetsTools.NET.csproj" />
+    <ProjectReference Include="G:\UABEA-91070102917d1638dd9034306d443bed8c465a58\UABEAvalonia\UABEAvalonia.csproj" />
   </ItemGroup>
 
   <ItemGroup>

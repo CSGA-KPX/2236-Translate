@@ -1,0 +1,129 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AssetRipper.TextureDecoder" Version="1.2.0" />
+    <PackageReference Include="Avalonia" Version="11.0.0-preview6" />
+    <PackageReference Include="Avalonia.Desktop" Version="11.0.0-preview6" />
+    <PackageReference Include="Avalonia.Diagnostics" Version="11.0.0-preview6" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.0-preview6" />
+    <PackageReference Include="Avalonia.Themes.Simple" Version="11.0.0-preview6" />
+    <PackageReference Include="Mono.Cecil" Version="0.11.4" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="2.1.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UABEAvalonia\UABEAvalonia.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="AssetsTools.NET">
+      <HintPath>..\Libs\AssetsTools.NET.dll</HintPath>
+    </Reference>
+	<Reference Include="AssetsTools.NET.Texture">
+	  <HintPath>..\Libs\AssetsTools.NET.Texture.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  
+  <PropertyGroup>
+    <UABEANativeConfig>unknown</UABEANativeConfig>
+  </PropertyGroup>
+  
+  <!-- this will only execute once while building the solution -->
+  <!-- this should set UABEANativeConfig with the config, but  -->
+  <!-- the actual copying has to be copy and pasted to work    -->
+  <!-- with msbuild since targets can only execute once        -->
+  <Target Name="BuildNativeAndSetConfig">
+    <!-- g++ doesn't build the same as $(Platform) so check the os's platform instead -->
+    <!-- yes I know this is bad hack -->
+    <Exec Condition="$([MSBuild]::IsOsPlatform(Linux))" Command="uname -m" ConsoleToMSBuild="true">
+      <Output TaskParameter="ConsoleOutput" PropertyName="LinuxUnameM" />
+    </Exec>
+    
+    <!-- anycpu will build x64, I have to choose one or another -->
+    <!-- and I figure most people have 64bit computers          -->
+    <PropertyGroup Condition="$([MSBuild]::IsOsPlatform(Windows)) AND ('$(Platform)' == 'x64' OR '$(Platform)' == 'AnyCPU')">
+      <UABEANativeConfig>win-x64</UABEANativeConfig>
+      <TexToolWrapBinDir>$(SolutionDir)TexToolWrap\bin\x64\Release\TexToolWrap.dll</TexToolWrapBinDir>
+      <PVRTexToolBinDir>$(SolutionDir)TexToolWrap\PVRTexLib\Windows_x86_64\PVRTexLib.dll</PVRTexToolBinDir>
+      <ISPCBinDir>$(SolutionDir)TexToolWrap\ispc\win64\ispc_texcomp.dll</ISPCBinDir>
+      <CrunchBinDir>$(SolutionDir)TexToolWrap\crunch\win64\crnlib.dll</CrunchBinDir>
+    </PropertyGroup>
+    <PropertyGroup Condition="$([MSBuild]::IsOsPlatform(Windows)) AND '$(Platform)' == 'x86'">
+      <UABEANativeConfig>win-x86</UABEANativeConfig>
+      <TexToolWrapBinDir>$(SolutionDir)TexToolWrap\bin\Win32\Release\TexToolWrap.dll</TexToolWrapBinDir>
+      <PVRTexToolBinDir>$(SolutionDir)TexToolWrap\PVRTexLib\Windows_x86_32\PVRTexLib.dll</PVRTexToolBinDir>
+      <ISPCBinDir>$(SolutionDir)TexToolWrap\ispc\win32\ispc_texcomp.dll</ISPCBinDir>
+      <CrunchBinDir>$(SolutionDir)TexToolWrap\crunch\win32\crnlib.dll</CrunchBinDir>
+    </PropertyGroup>
+    <PropertyGroup Condition="$([MSBuild]::IsOsPlatform(Linux)) AND '$(LinuxUnameM)' == 'x86_64'">
+      <UABEANativeConfig>linux-x64</UABEANativeConfig>
+      <TexToolWrapBinDir>$(SolutionDir)TexToolWrap\libtextoolwrap.so</TexToolWrapBinDir>
+      <PVRTexToolBinDir>$(SolutionDir)TexToolWrap\PVRTexLib\Linux_x86_64\libPVRTexLib.so</PVRTexToolBinDir>
+      <ISPCBinDir>$(SolutionDir)TexToolWrap\ispc\linux64\libispc_texcomp.so</ISPCBinDir>
+      <CrunchBinDir>$(SolutionDir)TexToolWrap\crunch\linux64\libcrnlib.so</CrunchBinDir>
+    </PropertyGroup>
+    <PropertyGroup Condition="$([MSBuild]::IsOsPlatform(Linux)) AND ('$(LinuxUnameM)' == 'i386' OR '$(LinuxUnameM)' == 'i686')">
+      <UABEANativeConfig>linux-x86</UABEANativeConfig>
+      <TexToolWrapBinDir>$(SolutionDir)TexToolWrap\libtextoolwrap.so</TexToolWrapBinDir>
+      <PVRTexToolBinDir>$(SolutionDir)TexToolWrap\PVRTexLib\Linux_x86_32\libPVRTexLib.so</PVRTexToolBinDir>
+      <ISPCBinDir>$(SolutionDir)TexToolWrap\ispc\linux32\libispc_texcomp.so</ISPCBinDir>
+      <CrunchBinDir>$(SolutionDir)TexToolWrap\crunch\linux32\libcrnlib.so</CrunchBinDir>
+    </PropertyGroup>
+    
+    <!-- build textoolwrap for windows with vcxproj -->
+    <MSBuild Condition="'$(UABEANativeConfig)' == 'win-x64'" Projects="$(SolutionDir)TexToolWrap\TexToolWrap.vcxproj" Targets="Build" Properties="Configuration=Release;Platform=x64" />
+    <MSBuild Condition="'$(UABEANativeConfig)' == 'win-x86'" Projects="$(SolutionDir)TexToolWrap\TexToolWrap.vcxproj" Targets="Build" Properties="Configuration=Release;Platform=Win32" />
+
+    <!-- build textoolwrap for linux with make -->
+    <Exec Condition="'$(UABEANativeConfig)' == 'linux-x64' OR '$(UABEANativeConfig)' == 'linux-x86'" Command="make" WorkingDirectory="$(SolutionDir)TexToolWrap" />
+    
+    <Message Importance="High" Text="TEXTUREPLUGIN BUILD INFO" />
+    <Message Importance="High" Text="  ONWINDOWS: $([MSBuild]::IsOsPlatform(Windows))" />
+    <Message Importance="High" Text="  PLATFORM: $(Platform)" />
+    <Message Importance="High" Text="  CONFIG: $(UABEANativeConfig)" />
+  </Target>
+  
+  <!-- there seems to be no flag for checking if building  -->
+  <!-- or publishing, so we just have two separate targets -->
+
+  <!-- build event -->
+  <Target Name="CopyLibrariesBuild" DependsOnTargets="BuildNativeAndSetConfig" AfterTargets="AfterBuild" Condition="'$(SolutionDir)' != '*Undefined*'">
+    <PropertyGroup>
+      <UABEABinDir>$(SolutionDir)UABEAvalonia\$(OutputPath)</UABEABinDir>
+    </PropertyGroup>
+    
+    <!-- copy textoolwrap and deps -->
+    <Copy SourceFiles="$(TexToolWrapBinDir)" DestinationFolder="$(UABEABinDir)runtimes\$(UABEANativeConfig)\native" ContinueOnError="true" />
+    <Copy SourceFiles="$(PVRTexToolBinDir)" DestinationFolder="$(UABEABinDir)runtimes\$(UABEANativeConfig)\native" ContinueOnError="true" />
+    <Copy SourceFiles="$(ISPCBinDir)" DestinationFolder="$(UABEABinDir)runtimes\$(UABEANativeConfig)\native" ContinueOnError="true" />
+    <Copy SourceFiles="$(CrunchBinDir)" DestinationFolder="$(UABEABinDir)runtimes\$(UABEANativeConfig)\native" ContinueOnError="true" />
+    
+    <!-- copy textureplugin -->
+    <Copy SourceFiles="$(OutputPath)TexturePlugin.dll" DestinationFolder="$(UABEABinDir)plugins" ContinueOnError="true" />
+  </Target>
+  
+  <!-- publish event -->
+  <Target Name="CopyLibrariesPublish" DependsOnTargets="BuildNativeAndSetConfig" AfterTargets="Publish" Condition="'$(SolutionDir)' != '*Undefined*'">    
+    <PropertyGroup>
+      <UABEABinDir>$(SolutionDir)UABEAvalonia\$(PublishDir)</UABEABinDir>
+    </PropertyGroup>
+    
+    <!-- copy textoolwrap and deps -->
+    <Copy SourceFiles="$(TexToolWrapBinDir)" DestinationFolder="$(UABEABinDir)runtimes\$(UABEANativeConfig)\native" ContinueOnError="true" />
+    <Copy SourceFiles="$(PVRTexToolBinDir)" DestinationFolder="$(UABEABinDir)runtimes\$(UABEANativeConfig)\native" ContinueOnError="true" />
+    <Copy SourceFiles="$(ISPCBinDir)" DestinationFolder="$(UABEABinDir)runtimes\$(UABEANativeConfig)\native" ContinueOnError="true" />
+    <Copy SourceFiles="$(CrunchBinDir)" DestinationFolder="$(UABEABinDir)runtimes\$(UABEANativeConfig)\native" ContinueOnError="true" />
+    
+    <!-- copy textureplugin -->
+    <Copy SourceFiles="$(OutputPath)TexturePlugin.dll" DestinationFolder="$(UABEABinDir)plugins" ContinueOnError="true" />
+  </Target>
+</Project>

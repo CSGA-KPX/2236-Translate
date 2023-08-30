@@ -92,6 +92,12 @@ let main args =
             | [| "test" |] -> 
                 ensureFileExists projFile
                 Test.test projFile
+
+            | [| "repack";  originAsset; targetAsset |] ->
+                ensureFileExists projFile
+                ensureFileExists originAsset
+
+                RepackV2.repack originAsset projFile targetAsset
                 
             | _ ->
                 printfn $"未知指令:%A{args}"
