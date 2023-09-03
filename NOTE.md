@@ -205,6 +205,8 @@ panta rhei ：万物流转
 PHASE14-15左右白石的对话
 PHASE16 MASUKO的对话
 
+2236_14.book|Assets/2236/2236_14.xlsx:PHASE14|1655 https://www.hujiang.com/jpciku/je78599/ 煙に巻かれた
+
 2236_15.book|Assets/2236/2236_15.xlsx:PHASE15|35 臍で茶を沸かす
 
 2236_15.book|Assets/2236/2236_15.xlsx:PHASE15|56
