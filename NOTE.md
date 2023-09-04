@@ -1,5 +1,25 @@
 # 分歧点
 
+## PHASE00
+
+分支点16
+分支条件M1 LAN
+
+分至点597
+分支条件M2 switch6
+
+if switch6 then SOLVED6 else 2236OP3
+
+通过春线 switch6=true
+通过TE   switch6=false
+
+## PHASE11
+分支点 923 LANG
+
+## PHASE12
+分支点 805 M3
+分支点 963 M4
+
 ## PHASE13
 
 | 1136 | 作用      | 1249 | 作用         |
@@ -105,6 +125,8 @@ panta rhei ：万物流转
 2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|559 来自EVA真心为你的海报
 
 2236_12.book|Assets/2236/2236_12.xlsx:PHASE12|560 怀疑是河野裕的《消失吧，群青（いなくなれ、群青）》
+
+2236_13.book|Assets/2236/2236_13.xlsx:PHASE13|118 笑点在哪里
 
 2236_15.book|Assets/2236/2236_15.xlsx:PHASE15|123 doppelgangers 分身有点奇怪，二重身好像用得比较多？
 

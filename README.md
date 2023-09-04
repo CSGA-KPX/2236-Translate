@@ -9,12 +9,12 @@
 - [x] 谷歌机翻（英日）
 - [x] GPT3.5机翻（日）
 - [x] 词汇表
-- [ ] 人工检查
+- [x] 人工检查
     * 1pass 完成
-    * 2pass ```2236_07.book|Assets/2236/2236_07.xlsx:PHASE7|11``` 完成（原定修正PHASE6和之前的错误）
-    * 游戏内检查 @ ```2236_18h.book|Assets/2236/2236_18h.xlsx:PHASE18h|2044```
-- [ ] 完成 `2236utils lint` 检查
-- [ ] 发布alpha补丁
+    * 2pass 完成（原定修正PHASE6和之前的错误）
+    * 游戏内检查 完成
+- [x] 完成 `2236utils lint` 检查
+- [x] 发布alpha补丁
 - [ ] 解决Issues内问题
 - [ ] 发布beta补丁
 
