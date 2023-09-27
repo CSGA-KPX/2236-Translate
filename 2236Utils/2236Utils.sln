@@ -5,8 +5,6 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "2236Utils", "2236Utils.fsproj", "{0E8E95E8-9463-4FAB-82E5-F95B54452E45}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UABEAvalonia", "..\UABEA-91070102917d1638dd9034306d443bed8c465a58\UABEAvalonia\UABEAvalonia.csproj", "{9051D70A-E6A0-4EF5-9B9E-FC72BBB99309}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssetsTools.NET", "..\AssetsTools.NET-0af9e6f3090b4c7a23c7ea57cbaf7fd357d13926\AssetTools.NET\AssetsTools.NET.csproj", "{CF7F112A-7743-4E17-BAD8-E59BA6F84EF9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssetsTools.NET.Cpp2IL", "..\AssetsTools.NET-0af9e6f3090b4c7a23c7ea57cbaf7fd357d13926\AssetsTools.NET.Cpp2IL\AssetsTools.NET.Cpp2IL.csproj", "{D0D91693-BE32-45F0-9320-82573CF44B24}"
@@ -14,6 +12,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssetsTools.NET.MonoCecil", "..\AssetsTools.NET-0af9e6f3090b4c7a23c7ea57cbaf7fd357d13926\AssetsTools.NET.MonoCecil\AssetsTools.NET.MonoCecil.csproj", "{7D30B1CA-1B75-4FBB-8B51-1CC2D5ACB63D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssetsTools.NET.Texture", "..\AssetsTools.NET-0af9e6f3090b4c7a23c7ea57cbaf7fd357d13926\AssetsTools.NET.Texture\AssetsTools.NET.Texture.csproj", "{B4F36879-A7C5-400F-9EAC-CC92BE604AF9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UABEAvalonia", "..\UABEA-91070102917d1638dd9034306d443bed8c465a58\UABEAvalonia\UABEAvalonia.csproj", "{9BE47891-A129-4748-B2D3-57B45E60FE7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,18 +37,6 @@ Global
 		{0E8E95E8-9463-4FAB-82E5-F95B54452E45}.Release|x64.Build.0 = Release|Any CPU
 		{0E8E95E8-9463-4FAB-82E5-F95B54452E45}.Release|x86.ActiveCfg = Release|Any CPU
 		{0E8E95E8-9463-4FAB-82E5-F95B54452E45}.Release|x86.Build.0 = Release|Any CPU
-		{9051D70A-E6A0-4EF5-9B9E-FC72BBB99309}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9051D70A-E6A0-4EF5-9B9E-FC72BBB99309}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9051D70A-E6A0-4EF5-9B9E-FC72BBB99309}.Debug|x64.ActiveCfg = Debug|x64
-		{9051D70A-E6A0-4EF5-9B9E-FC72BBB99309}.Debug|x64.Build.0 = Debug|x64
-		{9051D70A-E6A0-4EF5-9B9E-FC72BBB99309}.Debug|x86.ActiveCfg = Debug|x86
-		{9051D70A-E6A0-4EF5-9B9E-FC72BBB99309}.Debug|x86.Build.0 = Debug|x86
-		{9051D70A-E6A0-4EF5-9B9E-FC72BBB99309}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9051D70A-E6A0-4EF5-9B9E-FC72BBB99309}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9051D70A-E6A0-4EF5-9B9E-FC72BBB99309}.Release|x64.ActiveCfg = Release|x64
-		{9051D70A-E6A0-4EF5-9B9E-FC72BBB99309}.Release|x64.Build.0 = Release|x64
-		{9051D70A-E6A0-4EF5-9B9E-FC72BBB99309}.Release|x86.ActiveCfg = Release|x86
-		{9051D70A-E6A0-4EF5-9B9E-FC72BBB99309}.Release|x86.Build.0 = Release|x86
 		{CF7F112A-7743-4E17-BAD8-E59BA6F84EF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CF7F112A-7743-4E17-BAD8-E59BA6F84EF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF7F112A-7743-4E17-BAD8-E59BA6F84EF9}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -97,6 +85,18 @@ Global
 		{B4F36879-A7C5-400F-9EAC-CC92BE604AF9}.Release|x64.Build.0 = Release|Any CPU
 		{B4F36879-A7C5-400F-9EAC-CC92BE604AF9}.Release|x86.ActiveCfg = Release|Any CPU
 		{B4F36879-A7C5-400F-9EAC-CC92BE604AF9}.Release|x86.Build.0 = Release|Any CPU
+		{9BE47891-A129-4748-B2D3-57B45E60FE7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BE47891-A129-4748-B2D3-57B45E60FE7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BE47891-A129-4748-B2D3-57B45E60FE7E}.Debug|x64.ActiveCfg = Debug|x64
+		{9BE47891-A129-4748-B2D3-57B45E60FE7E}.Debug|x64.Build.0 = Debug|x64
+		{9BE47891-A129-4748-B2D3-57B45E60FE7E}.Debug|x86.ActiveCfg = Debug|x86
+		{9BE47891-A129-4748-B2D3-57B45E60FE7E}.Debug|x86.Build.0 = Debug|x86
+		{9BE47891-A129-4748-B2D3-57B45E60FE7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BE47891-A129-4748-B2D3-57B45E60FE7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BE47891-A129-4748-B2D3-57B45E60FE7E}.Release|x64.ActiveCfg = Release|x64
+		{9BE47891-A129-4748-B2D3-57B45E60FE7E}.Release|x64.Build.0 = Release|x64
+		{9BE47891-A129-4748-B2D3-57B45E60FE7E}.Release|x86.ActiveCfg = Release|x86
+		{9BE47891-A129-4748-B2D3-57B45E60FE7E}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

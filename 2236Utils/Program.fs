@@ -89,9 +89,9 @@ let main args =
                 ensureFileExists projFile
                 Search.search projFile lang str
 
-            | [| "test" |] -> 
+            | [| "test"; fileFrom; fileTo |] -> 
                 ensureFileExists projFile
-                Test.test projFile
+                Test.test fileFrom fileTo
 
             | [| "repack";  originAsset; targetAsset |] ->
                 ensureFileExists projFile
@@ -99,6 +99,14 @@ let main args =
 
                 RepackV2.repack originAsset projFile targetAsset
                 
+            | [| "diffmerge";  diffFile; projFile; oriFile; targetFile; outFile |] ->
+                ensureFileExists diffFile
+                ensureFileExists projFile
+                ensureFileExists oriFile
+                ensureFileExists targetFile
+
+                DiffMerge.diffMerge diffFile projFile oriFile targetFile outFile
+
             | _ ->
                 printfn $"未知指令:%A{args}"
                 Console.WriteLine(helpText)
