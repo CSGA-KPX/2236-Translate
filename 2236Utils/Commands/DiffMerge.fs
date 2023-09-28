@@ -23,7 +23,7 @@ type Message =
     member x.IsPadding = x.Message = "PADDING"
     member x.ToReplace = String.IsNullOrWhiteSpace(x.Replace) |> not
 
-let diffMerge diffFile projFile oriFile targetFile outFile =
+let diffMerge diffFile projFile oriFile targetFile (outFile : string) =
     let src =
         let ori = JArray.Parse(File.ReadAllText(oriFile)).ToObject<ExportItem[]>()
         let src = JArray.Parse(File.ReadAllText(projFile)).ToObject<ExportItem[]>()
@@ -39,11 +39,11 @@ let diffMerge diffFile projFile oriFile targetFile outFile =
 
     let mutable srcIdx = 0
     let mutable dstIdx = 0
+    let newItems = ResizeArray<ExportItem>()
 
     for item in diff do
         let si = src.[srcIdx]
         let di = dst.[dstIdx]
-
 
         printfn $"{si.Id} -> {di.Id} \r\n {item}"
 
@@ -66,16 +66,24 @@ let diffMerge diffFile projFile oriFile targetFile outFile =
             dst.[dstIdx] <-
                 { dst.[dstIdx] with
                     Final = dst.[dstIdx].Jpn }
+            newItems.Add(dst.[dstIdx])
             dstIdx <- dstIdx + 1
         elif item.ToReplace then
             // 需要替换的
             dst.[dstIdx] <-
                 { dst.[dstIdx] with
                     Final = dst.[dstIdx].Jpn }
+            newItems.Add(dst.[dstIdx])
             srcIdx <- srcIdx + 1
             dstIdx <- dstIdx + 1
         else
             failwithf $"{si.Jpn} <--> {di.Jpn}"
 
 
+    let extFile = 
+        let dir = Path.GetDirectoryName(outFile)
+        let fileName = Path.GetFileNameWithoutExtension(outFile) + "_diff.json"
+        Path.Join(dir, fileName)
+
+    File.WriteAllText(extFile, JsonConvert.SerializeObject(newItems, Formatting.Indented))
     File.WriteAllText(outFile, JsonConvert.SerializeObject(dst, Formatting.Indented))
