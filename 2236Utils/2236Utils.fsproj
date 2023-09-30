@@ -24,6 +24,7 @@
     <Compile Include="Commands\Search.fs" />
     <Compile Include="Commands\Test.fs" />
     <Compile Include="Commands\RepackV2.fs" />
+    <Compile Include="Commands\DiffMerge.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
